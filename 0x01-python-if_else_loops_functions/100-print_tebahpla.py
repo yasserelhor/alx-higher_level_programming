@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+output = ""
+
 for i in reversed(range(97, 123)):
-    if i % 2 == 0:
-        print(chr(i), end='')
-    else:
-        print(chr(i-32), end='')
+    output += chr(i) if i % 2 == 0 else chr(i - 32)
+print(output, end='')
