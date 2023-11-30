@@ -6,7 +6,10 @@ if __name__ == "__main__":
 
     for i in sys.argv:
         count += 1
-    print("{} arguments:".format(count-1))
+    if count > 1:
+        print("{} arguments:".format(count-1))
+    else:
+        print("{} arguments.".format(count-1))
     
     count1 = 1
     for a in sys.argv:
