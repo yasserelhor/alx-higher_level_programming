@@ -10,5 +10,3 @@ def magic_calculation(a, b):
     else:
         c = sub(a, b)
         return c
-    
-
