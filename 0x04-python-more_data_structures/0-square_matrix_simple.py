@@ -1,14 +1,10 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    matrixa = [
-            [0, 0, 0],
-            [0, 0, 0],
-            [0, 0, 0]]
+    matrixa = []
 
-    for r in range(3):
-        for c in range(3):
-            matrixa[r][c] = matrix[r][c] ** 2
-
+    for r in matrix:
+        res = list(map(lambda x: x ** 2, r))
+        matrixa.append(res)
     return matrixa
 
 
