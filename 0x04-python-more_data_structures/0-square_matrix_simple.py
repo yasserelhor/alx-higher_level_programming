@@ -6,5 +6,3 @@ def square_matrix_simple(matrix=[]):
         res = list(map(lambda x: x ** 2, r))
         matrixa.append(res)
     return matrixa
-
-
