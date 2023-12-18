@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def list_division(my_list_1, my_list_2, list_length):
-    count = 0
     i = 0
-    n_list = []
+    lista = []
+    c = 0
 
     for i in range(list_length):
         try:
@@ -17,6 +17,6 @@ def list_division(my_list_1, my_list_2, list_length):
             print("out of range")
             r = 0
         finally:
-            n_list.append(r)
+            lista.append(r)
 
-    return n_list
+    return lista
