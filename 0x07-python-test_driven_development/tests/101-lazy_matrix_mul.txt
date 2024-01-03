@@ -1,0 +1,41 @@
+# Test cases for lazy_matrix_mul function
+# ---------------------------------------
+
+# Matrix multiplication with valid inputs:
+>>> print(lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+[[ 7 10]
+ [15 22]]
+
+# Invalid input cases:
+>>> print(lazy_matrix_mul([[1, 2]], 9))
+Traceback (most recent call last):
+ValueError: Operand 1 does not have enough dimensions (has 0, expected 2)
+
+>>> print(lazy_matrix_mul("Hello", [[1, 2]]))
+Traceback (most recent call last):
+ValueError: Operand 0 does not have enough dimensions (has 0, expected 2)
+
+>>> print(lazy_matrix_mul(["Betty", "Holberton"], [[1, 2]]))
+Traceback (most recent call last):
+ValueError: Operand 1 has a mismatch in its core dimension 0 (size 1 is different from 2)
+
+>>> print(lazy_matrix_mul([[9, 4]], [[]]))
+Traceback (most recent call last):
+ValueError: Operand 1 has a mismatch in its core dimension 0 (size 1 is different from 2)
+
+>>> print(lazy_matrix_mul([[1, 2], ["Hello", 9]], [[9, 4], [2, 5]]))
+Traceback (most recent call last):
+TypeError: Unsupported data type in operand 0 or 1
+
+>>> print(lazy_matrix_mul([[9, 4], [2]], [[1, 2], [4, 9]]))
+Traceback (most recent call last):
+TypeError: Unsupported data type in operand 0 or 1
+
+>>> print(lazy_matrix_mul([[9, 4, 4], [2, 8, 2]], [[1, 2], [4, 9]]))
+Traceback (most recent call last):
+ValueError: Operand 1 has a mismatch in its core dimension 0 (size 2 is different from 3)
+
+>>> print(lazy_matrix_mul([], [[9, 4]]))
+Traceback (most recent call last):
+ValueError: m_a can't be empty
+
