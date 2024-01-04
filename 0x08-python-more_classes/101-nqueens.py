@@ -48,7 +48,8 @@ def get_solution(chessboard):
 
 
 def mark_positions(chessboard, row, col):
-    """Mark out positions on a chessboard where non-attacking queens cannot be placed.
+    """Mark out positions on a chessboard where non-attacking
+    queens cannot be placed.
 
     Args:
         chessboard (list): The current working chessboard.
@@ -138,4 +139,3 @@ if __name__ == "__main__":
     solutions = recursive_solve(chessboard, 0, 0, [])
     for solution in solutions:
         print(solution)
-
