@@ -94,7 +94,7 @@ class Rectangle:
             return 2 * (self.__height + self.__width)
 
     def __str__(self):
-        """Returns a string representation of the rectangle using '#' character.
+        """Returns a string representation of the rectangle using.
 
         Returns:
             str: The string representation of the rectangle.
