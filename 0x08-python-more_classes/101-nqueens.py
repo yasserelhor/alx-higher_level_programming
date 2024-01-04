@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+"""Classes"""
+
 
 import sys
 
 
 def init_board(n):
     """
-    Initialize an `n`x`n` sized chessboard with empty squares represented by ' '.
+    Initialize an `n`x`n` sized chessboard with empty squares.
 
     Args:
         n (int): The size of the chessboard.
@@ -55,7 +57,7 @@ def get_solution(board):
 
 def xout(board, row, col):
     """
-    Mark spots on a chessboard where non-attacking queens can no longer be placed.
+    Mark spots on a chessboard where non-attacking queen.
 
     Args:
         board (list): The current working chessboard.
