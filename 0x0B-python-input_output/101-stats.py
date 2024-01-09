@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""Reads from standard input and calculates metrics.
+"""Reads from standard input and computes metrics.
 
-After processing every ten lines or upon encountering a keyboard
-interruption (CTRL + C),
+After every ten lines or the input of a keyboard interruption (CTRL + C),
 prints the following statistics:
-    - Accumulated total file size up to that point.
+    - Total file size up to that point.
     - Count of read status codes up to that point.
 """
 
