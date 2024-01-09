@@ -2,8 +2,8 @@
 """
 Defines a function for saving a Python object to a JSON file.
 """
-
 import json
+
 
 def save_to_json_file(my_obj, filename):
     """
