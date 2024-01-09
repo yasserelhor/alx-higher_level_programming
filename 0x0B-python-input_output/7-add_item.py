@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-"""
-Adds command-line arguments to a Python list and saves them to a file.
-"""
+"""Save all arguments to a Python list and write them to a file."""
 import sys
-
 
 if __name__ == "__main__":
     save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
