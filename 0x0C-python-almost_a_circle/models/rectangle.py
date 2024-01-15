@@ -59,7 +59,6 @@ class Rectangle(Base):
         '''Gets or sets the x-coordinate of the rectangle.'''
         return self.__x
 
-
     @x.setter
     def x(self, value):
         '''Sets the x-coordinate of the rectangle.'''
