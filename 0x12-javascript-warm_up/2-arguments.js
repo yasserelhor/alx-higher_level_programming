@@ -6,5 +6,5 @@ if (lan === 0) {
 } else if (lan === 1) {
   console.log('Argument found');
 } else {
-  console.log('Argument found');
+  console.log('Arguments found');
 }
