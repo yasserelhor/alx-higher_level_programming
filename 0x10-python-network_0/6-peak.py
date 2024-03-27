@@ -5,7 +5,7 @@
 def find_peak(list_of_integers):
     """functrion"""
     if list_of_integers:
-        w = len(list_of_integers)- 1
+        w = len(list_of_integers) - 1
         f = 0
         while f < w:
             mid = (f+w)//2
