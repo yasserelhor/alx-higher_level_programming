@@ -1,16 +1,18 @@
 #!/usr/bin/python3
-"""this script takes 2 arguments in order to solve this challenge."""
-import sys
+"""This takes 2 arguments in order to solve this challenge."""
 import requests
+from sys import argv
 
 if __name__ == "__main__":
-    owner = sys.argv[1]
-    repo = sys.argv[2]
-    limit = 10
-    url = f'https://api.github.com/repos/{repo}/{owner}/commits\
-    ?per_page={limit}'
+    repo = argv[1]
+    owner = argv[2]
+    url = "https://api.github.com/repos/{}/{}/commits".format(owner, repo)
 
-    response = requests.get(url).json()
-    for commit in response:
-        name = commit.get("commit").get("author").get("name")
-        print(f'{commit.get("sha")}: {name}')
+    req = requests.get(url)
+    com = req.json()
+    try:
+        for i in range(10):
+            print("{}: {}".format(com[i].get("sha"),
+                  com[i].get("commit").get("author").get("name")))
+    except IndexError:
+        pass
